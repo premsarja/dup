@@ -1,0 +1,8 @@
+- name: java
+  hosts: all
+  become: yes
+  tasks:
+    - name: java
+      ansible.builtin.package:
+        name: java 
+        state: present     
